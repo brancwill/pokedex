@@ -352,7 +352,7 @@ const Pokemon = [
         id: 29,
         name: "Nidoran-F",
         types: ["Poison"],
-        img: "./img/Pokemon/029nidoran.png",
+        img: "./img/Pokemon/029Nidoran.png",
         stats: [55, 47, 52, 40, 40, 41, 275],
         dexEntry: "A mild-mannered Pokémon that does not like to fight. Beware–its small horn secretes venom.",
         cry: "./cries/nidoranf.mp3",
