@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+body {
+  margin: 0;
+  padding-top: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("./img/background.png");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App {
+  margin-top: 0;
+}
+.Pokedex {
+  height: 550px;
+  width: auto;
+  left: 320px;
+  margin-top: 0;
+  z-index: 2;
+  position: absolute;
+  pointer-events: none;
+}
+.Screen {
+  position: absolute;
+  left: 330px;
+  top: 118px;
+  background-color: #354045;
+  width: 247px;
+  height: 413px;
+  z-index: 1;
+  overflow: auto;
+  font: 400 12px "Zen Dots";
+  padding: 0 15px 0 20px;
+  box-shadow: inset 8px 8px 8px #1b2124;
+}
+.Card {
+  position: absolute;
+  left: 330px;
+  top: 118px;
+  background-color: #354045;
+  width: 247px;
+  height: 413px;
+  z-index: 0;
+  overflow: auto;
+  font: 400 12px "Zen Dots";
+  padding: 0 15px 0 20px;
+  box-shadow: inset 8px 8px 8px #1b2124;
+}
+.pokemonImage {
+  position: relative;
+  height: 100px;
+  width: auto;
+}
+.pokemonTitle {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  color: white;
+  text-shadow: 0 3px 3px #1b2124;
+}
+.statTitle, .abilityTitle {
+  color: white;
+  border-bottom: 1px solid white;
+  margin-bottom: 0px;
+}
+.dexEntry {
+  color: white;
+  background-color: #1b2124;
+  padding: 7px;
+  border-radius: 5px;
+}
+.navButtons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.Types {
+  display: flex;
+  justify-content: center;
+}
+.Types h4 {
+  box-shadow: 0 5px 5px #1b2124;
+  font-size: 10px;
+  text-align: center;
+  padding: 4px 15px;
+  width: 20%;
+  border-radius: 3px;
+  color: white;
+}
+.tabTypes {
+  box-shadow: 0 5px 5px #1b2124;
+  font-size: 8px;
+  text-align: center;
+  padding: 2px 10px;
+  border-radius: 3px;
+  color: white;
+  width: 40px;
+  height: 20px;
+  margin: -15px auto auto;
+}
+.abilities {
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  text-shadow: 0 3px 3px #1b2124;
+}
+ul {
+  list-style: none;
+  text-align: left;
+  color: white;
+  background-color: #1b2124;
+  padding-left: 80px;
+  line-height: 20px;
+  border-radius: 5px;
+}
+.navBtn {
+  background-color: #1b2124;
+  color: white;
+  border: none;
+  padding: 10px;
+  position: sticky;
+}
+.navBtn:hover {
+  background-color: white;
+  color: black;
+}
+.dropDown {
+  margin-top: 10px;
+}
+.tab {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+  width: 100%;
+  height: 80px;
+  border-radius: 5px;
+  background-image: linear-gradient(#354045, #1b2124);
+  margin: auto;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.tabList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
+}
+.sprite {
+  width: 30%;
+  height: auto;
+  margin-left: 5px;
+  flex-grow: 1;
+}
+.tabInfo {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0;
+  flex-grow: 2;
+  margin-right: 0;
+  margin-top: 25px;
+  font-size: 12px;
+  text-shadow: 0 3px 3px #1b2124; 
+}
+.tab:hover {
+  background-image: linear-gradient(red, black);
+}
+button:focus {
+  outline: none;
+}
+button:disabled, button:disabled:hover {
+  background-color: gray;
+  color: white;
+}
+.dropdown button:disabled {
+  display: none;
+}
+.dropdownItem {
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+  display: block;
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+.dropdownItem:hover {
+  background-color: red;
+}
+
+
+
+
+/* Type Colors ------------------------------ */
+.Grass {
+  background-image: linear-gradient(#029957, #004736);
+}
+.Fire {
+  background-image: linear-gradient(#f75f0c, #8a1804);
+}
+.Water {
+  background-image: linear-gradient(#0b6dd6, #012f61);
+  
+}
+.Electric {
+  background-image: linear-gradient(#e6d707, #826903);
+}
+.Fighting {
+  background-image: linear-gradient(#a31e07, #4f0d02);
+}
+.Rock {
+  background-image: linear-gradient(#756b6a, #36302f);
+}
+.Ground {
+  background-image: linear-gradient(#9e824a, #544425);
+}
+.Flying {
+  background-image: linear-gradient(#c1adc9, #786a7d);
+}
+.Dragon {
+  background-image: linear-gradient(#26247d, #821b24);
+}
+.Bug {
+  background-image: linear-gradient(#82a360, #4e6338);
+}
+.Poison {
+  background-image: linear-gradient(#80126a, #460047);
+}
+.Dark {
+  background-image: linear-gradient(#3b363d, #3b363d);
+}
+.Fairy {
+  background-image: linear-gradient(#ed9dc1, #b86a8d);
+}
+.Steel {
+  background-image: linear-gradient(#b5b5b5, #515254);
+}
+.Ghost {
+  background-image: linear-gradient(#702d8c, #361145);
+}
+.Psychic {
+  background-image: linear-gradient(#d11f81, #7a0d49);
+}
+.Ice {
+  background-image: linear-gradient(#9added, #64919c);
+}
+.Normal {
+  background-image: linear-gradient(#c0c1c2, #87888a);
+}
+
