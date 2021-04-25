@@ -11,7 +11,7 @@ const Variants = (props) => {
 );
     return(
         <div>
-            <DropdownButton id="dropdown-basic-button" disabled={props.hasVariant != true} title="Variants" className="dropDown">
+            <DropdownButton id="dropdown-basic-button" disabled={props.hasVariant !== true} title="Variants" className="dropDown">
                 {variantItems}
             </DropdownButton>
         </div>
