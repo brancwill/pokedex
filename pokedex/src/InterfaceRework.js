@@ -91,12 +91,12 @@ class Interface extends Component {
 
     render() {
         return(
-            <React.Fragment>
-                <img src="./img/PokedexDesktop.png" className="Pokedex" alt="Pokedex Interface" />
+            <div className="Interface">
+                <img src="./img/PokedexMobile.png" className="PokedexMobile" alt="" />
                 <div id="Screen" className="Screen">
                     {this.state.currentScreen}
                 </div>
-            </React.Fragment>
+            </div>
         )
     }
 }

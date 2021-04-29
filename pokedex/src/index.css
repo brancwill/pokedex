@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
-
+html {
+  overflow: hidden;
+}
 body {
   margin: 0;
   padding-top: 0;
@@ -10,35 +12,45 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: url("./img/background.png");
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 .App {
   margin-top: 0;
-}
-.Pokedex {
   height: 550px;
-  width: auto;
-  left: 320px;
-  margin-top: 0;
+}
+.PokedexMobile {
+  width: 314px;
+  height: 524px;
+  text-align: center;
   z-index: 2;
   position: absolute;
+  margin: 10px auto;
   pointer-events: none;
+  padding: auto;
+  left: 30vw;
 }
 .Screen {
   position: absolute;
-  left: 330px;
-  top: 118px;
+  text-align: center;
+  left: 30%;
+  top: 120px;
   background-color: #354045;
   width: 247px;
-  height: 413px;
+  height: 408px;
   z-index: 1;
   overflow: auto;
   font: 400 12px "Zen Dots";
   padding: 0 15px 0 20px;
   box-shadow: inset 8px 8px 8px #1b2124;
+}
+.Screen::-webkit-scrollbar {
+  width: 8px;
+  background-color: white;
+}
+.Screen::-webkit-scrollbar-thumb {
+  background: black;
 }
 .Card {
   position: absolute;
@@ -260,3 +272,35 @@ button:disabled, button:disabled:hover {
   background-image: linear-gradient(#c0c1c2, #87888a);
 }
 
+@media screen and (max-device-width: 615) {
+  .PokedexMobile {
+    left: 12%;
+  }
+  .Screen {
+    left: 12%;
+  }
+}
+@media screen and (max-width: 525px) {
+  .PokedexMobile {
+    left: 18%;
+  }
+  .Screen {
+    left: 18%;
+  }
+}
+@media screen and (max-width: 404px) {
+  .PokedexMobile {
+    left: 8%;
+  }
+  .Screen {
+    left: 8%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .PokedexMobile {
+    left: 3%;
+  }
+  .Screen {
+    left: 3%;
+  }
+}
